@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: data-archival-engine
+  namespace: fb-13-oracle
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: data-archival-engine
+  template:
+    metadata:
+      labels:
+        app: data-archival-engine
+    spec:
+      containers:
+      - name: data-archival-engine
+        image: nginx:latest
+        env:
+        - name: DUMMY_VAR
+          value: "test"
