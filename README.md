@@ -6,7 +6,7 @@ This repository contains a proof-of-concept (POC) for automating the update of e
 
 1.  **Clone the repository:**
     ```bash
-    git clone <azure_devops_repo_url>
+    git clone https://github.com/heyamay/Kubernetes-Env-Update.git
     cd k8s-env-update-poc
     ```
 
